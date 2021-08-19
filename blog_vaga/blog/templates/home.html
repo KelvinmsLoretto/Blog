@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block sub_header %}
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">Meu primeiro post</h1>
+      <p class="lead my-3">Esse blog foi feito de maneira rapida para poder apresentar algo para vocês saberem que eu consigo fazer algo, peço desculpas de ante mão por ser tão basico, cheguei bem tarde da hora extra e vou ter que voltar de manhã</p>
+      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue lendo...</a></p>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+        <div class="card-body d-flex flex-column align-items-start">
+          <strong class="d-inline-block mb-2 text-primary">Post</strong>
+          <h3 class="mb-0">
+            <a class="text-dark" href="#">Esse post foi apenas para criar um card legal</a>
+          </h3>
+          <div class="mb-1 text-muted">12 de Nov</div>
+          <p class="card-text mb-auto">Como me faltou post fiz apenas para colocar em um card diferenciado.</p>
+          <a href="#">Continue lendo</a>
+        </div>
+      </div>
+    </div> 
+  </div>
+{% endblock %}
+
+{% block conteudo %}
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <h3 class="pb-3 mb-4 font-italic border-bottom">
+        Obrigado por visitar!
+      </h3>
+
+      <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="#">Mais antigos</a>
+        <a class="btn btn-outline-secondary disabled" href="#">Mais novos</a>
+      </nav>
+
+</div><!-- /.blog-main -->
+{% endblock %}
